@@ -39,7 +39,7 @@
     <h2>@links</h2>
     
     <a class="link link-primary" href="/">Primary link</a>
-    <a href="/">Secondary link</a>
+    <a class="link link-secondary" href="/">Secondary link</a>
     
     <hr>
 
@@ -48,7 +48,7 @@
     <h3>unordered lists</h3>
     </p>We don't want to show bullet in unordered link</p> 
     
-    <ul>
+    <ul class="list-non-bullet">
     <li>item one</li>
     <li>item two</li>
     <li>item three</li>
@@ -56,10 +56,10 @@
 
     <h3>unordered inline lists</h3>
     
-    <ul>
-    <li>item one</li> 
-    <li>item two</li>
-    <li>item three</li>
+    <ul class="list-non-bullet">
+    <li class="list-item-inline">item one</li> 
+    <li class="list-item-inline">item two</li>
+    <li class="list-item-inline">item three</li>
     </ul>
 
     <h3>reverse ordered lists</h3>
@@ -75,17 +75,17 @@
     <h2>@nav</h2>
     <p>navigation is used on top of page & to navigate different pages</p>
     
-    <nav>
-        <div>iAmBrand</div>
-        <ul>
-            <li>
-                <a href="/">home</a>
+    <nav class="navigation container">
+        <div class="nav-brand">iAmBrand</div>
+        <ul class="list-non-bullet nav-pills"> 
+            <li class="list-item-inline">
+                <a class="link link-active" href="/">home</a>
             </li>
-            <li>
-                <a href="/">products</a>
+            <li class="list-item-inline">
+                <a class="link" href="/">products</a>
             </li>
-            <li>
-                <a href="/">about</a>
+            <li class="list-item-inline">
+                <a class="link" href="/">about</a>
             </li>
         </ul>
     </nav>
@@ -94,33 +94,46 @@
   
   <h2>@header</h2>
 
-  <header>
-    <img src="/images/hero.svg" />
-    <h1>Hero name</h1>
+  <header class="hero">
+    <img class="hero-img" src="/images/hero.svg" />
+    <h1 class="hero-heading">Ajinkya H Jagadale the <span class="heading-inverted">web developer</span></h1>
  </header>
      
 <hr>
 
 <h2>@section</h2>
 
-<section>
-    <h3>white section</h3>
-    <p>This will be white section </p>
+<section class="section">
+    <div class="container container-center">
+        <h1>white section</h1>
+        <p>This will be white section </p>
+    </div>
 </section>
 
-<section>
-    <h3>offwhite section</h3>
-    <p>This will be white section </p>
-</section>
+<section class="section ow"> 
+    <div class="container container-center">
+        <h1>offwhite section</h1>
+        <p>This will be off-white section </p>
+    </div>
+    </section>
 <hr>
 
 <h2>@footer</h2>
-<footer>
-<div>Some small heading inside footer</div>
-<ul>
-    <li>SocialOne</li>
-    <li>SocialTwo</li>
-    <li>SocialTwo</li>
+<footer class="footer">
+<div 
+class="footer-header">Some small heading inside footer
+</div>
+<ul class="social-links list-non-bullet">
+    <li class="list-item-inline">
+        <a class="link" href="/">SocialOne</a>
+    </li>
+    <li  class="list-item-inline">
+        <a class="link" href="/">SocialTwo</a>
+    </li>
+    <li  class="list-item-inline">
+        <a class="link" href="/">SocialThree</a>
+    </li>
+
 </ul>
 </footer>
 
