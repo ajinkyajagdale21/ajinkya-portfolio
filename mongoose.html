@@ -51,9 +51,13 @@
                 <h3>//Read</h3>
                 <p>app.get('/Products',async(req,res)=>{ <br> try{ <br> 
                    const products = await Product.find({}); <br>
-                   res.json({success:true,products})
-                
-                } })</p>
+                   res.json({success:true,products})<br>
+                } })
+                <br>catch{<br>
+                    res.status(500).json({success:false,message: "unable to get products"})
+                  }<br>
+                }) 
+            </p>
 
         </div>
     
