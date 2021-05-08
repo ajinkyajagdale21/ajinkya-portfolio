@@ -57,8 +57,20 @@
                     res.status(500).json({success:false,message: "unable to get products"})
                   }<br>
                 }) 
-            </p>
-
+                </p>
+                <h3>Update</h3>
+                <p>app.post('/products',async(req,res)=>{<br>
+                    try{<br>
+                      const product= req.body<br>
+                      const NewProduct = new Product(product)<br>
+                      const savedProduct= await NewProduct.save();<br>
+                      res.json({success:true,products:savedProduct})<br>
+                    }<br>
+                    catch{<br>
+                      res.status(500).json({success:false,message: "unable to get products"})
+                    }<br>
+                  })
+                </p>
         </div>
     
 
